@@ -27,7 +27,7 @@ dsquery user ... --stalepwd 30 (que no haya cambiado la password desde hace al m
 * #### whoami
 (Lista usuario actual)
 
-* #### exec <comando>
+*  #### exec <comando>
 (ejecuta el comando y te saca de SHELL "como si hicieras exit")
 
 *  #### time <comando>
