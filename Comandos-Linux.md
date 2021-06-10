@@ -21,10 +21,10 @@ dsquery user ... --stalepwd 30 (que no haya cambiado la password desde hace al m
 
 
 
-* #### pwd
+*  #### pwd
 (Lista directorio actual)
 
-* #### whoami
+*  #### whoami
 (Lista usuario actual)
 
 *  #### exec <comando>
@@ -33,13 +33,13 @@ dsquery user ... --stalepwd 30 (que no haya cambiado la password desde hace al m
 *  #### time <comando>
 (Lista el tiempo (real, de usuario, de sistema) que ha tardado en ejecutarse <comando>)
 
-* #### history
+*  #### history
 (Lista los últimos comandos tecleados)
 ```
   ~/.bash_history
 ```
 
-* #### touch
+*  #### touch
 (Crea un fichero vacío (con los permisos de la máscara actual umask)
 ```
 permiso = permiso_base AND NOT (umask) *
@@ -48,7 +48,7 @@ permiso = permiso_base AND NOT (umask) *
      permiso base direct -- 777
 ```
 
-* #### ls
+*  #### ls
 (Listar contenido de un directorio)
 
 ```
@@ -58,20 +58,20 @@ permiso = permiso_base AND NOT (umask) *
 -R (recursivo de todos los subdirectorios)
 ```
 
-* #### cp
+*  #### cp
 (Copiar)
 ```
 -u (copia, si el origen está mas actualizado que el destino)
 -r (copia recursiva)
 ```
 
-* #### mv
+*  #### mv
 (Mueve y renombra)
 ```
 -i (pregunta antes de sobreescribir)
 ```
 
-* #### rm
+*  #### rm
 (Elimina)
 ```
 
@@ -79,7 +79,7 @@ permiso = permiso_base AND NOT (umask) *
 -r (recursiva)
 ```
 
-* #### touch
+*  #### touch
 (Crea ficheros vación)
 ```
 
@@ -88,7 +88,7 @@ permiso = permiso_base AND NOT (umask) *
 -c (no crea fichero si este no existe)
 ```  
   
-* #### tar
+*  #### tar
 (Empaquetar/Desempaquetar)
 ```
 
@@ -101,40 +101,40 @@ tar xvfz /media/copia.tgz
     z - gzip
 ``` 
 
-* #### dd
+*  #### dd
 (copia entre dispositivos)
 ```
 dd if=/dar/zero of=empty.img bs=1024 count=720
 dd if=dev/cdrom of=/media/imagenCD.iso
 dd if=/dev/hda of=/media/mbr bs=512 count=1
 ```
-  
-* #### mkdir
+
+*  #### mkdir
 (Crea subdirectorios)
 ```
 -p (crea todos los subdirectorios necesarios)
 ```
 
-* #### rmdir
+*  #### rmdir
 (Eliminar un directorio)
 ```
 -p (el arbol entero)
 ```
 
-* #### chown
+*  #### chown
 (Permite cambiar el propietario de un archivo)
 ```
 -R (recursivo)
   .chown user:group file (solo puede root!!)
 ```
 
-* #### chgrp
+*  #### chgrp
 (Cambia el grupo owner)
   
-* #### chmod
+*  #### chmod
 ()
 
-* #### find
+*  #### find
 (Buscar ficheros en el sistema)
  ```
 -type d
@@ -146,7 +146,7 @@ dd if=/dev/hda of=/media/mbr bs=512 count=1
 -size +50mb
 ```
 
-* #### ln
+*  #### ln
 (enlaces)
 ```
   
@@ -156,7 +156,7 @@ dd if=/dev/hda of=/media/mbr bs=512 count=1
 *HARD-link (todos los enlaces son los mismos inodo. Comparten TODO) Son "copias" del fichero" (si se borra el original, no pasa nada)
 ```
 
-* #### split
+*  #### split
 (Genera ficheros de trozos)
 ```
 
@@ -164,34 +164,35 @@ x bytes
 x filas
 ```
 
-* #### tr
+*  #### tr
 (Pasa de mayusculas a minusculas)
 ```
 
 ABC...abc... < fichero.txt
 ```
 
-* #### uniq
+*  #### uniq
 (elimina lineas duplicadas)
                           
-* #### nl
+*  #### nl
 (como el comando cat pero imprime los num de lineas)
 ```
 
 -b a (numera tambien las lineas vacias)
 ```
 
-* #### head/tail
+*  #### head/tail
 (ver las primeras o ultimas filas N lineas)
 ```
 
 tail -zoo f fichero.log (mantiene el fichero abierto u nos muestra las 1er lineas nuevas que se van cambiando del fichero)
 ```
                           
-* #### more/less
+*  #### more/less
 (Informacion paginada)
 
-* #### cut
+
+*  #### cut
 (Corta en vertical)
 ```
 
@@ -200,7 +201,7 @@ tail -zoo f fichero.log (mantiene el fichero abierto u nos muestra las 1er linea
 -c (por caracteres)
 ```
 
-* #### wc
+*  #### wc
 (word count)
 ```
 
@@ -210,11 +211,11 @@ tail -zoo f fichero.log (mantiene el fichero abierto u nos muestra las 1er linea
 -c (por caracter)
 ```
 
-* #### grep
+*  #### grep
 (busquedas)                     
-* #### egrep
+*  #### egrep
 (soporta expr regulares)                        
-* #### fgrep
+*  #### fgrep
 (NO soporta expr regulares)
 ```
 
