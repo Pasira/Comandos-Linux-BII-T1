@@ -156,12 +156,84 @@ dd if=/dev/hda of=/media/mbr bs=512 count=1
 *HARD-link (todos los enlaces son los mismos inodo. Comparten TODO) Son "copias" del fichero" (si se borra el original, no pasa nada)
 ```
 
+* #### split
+(Genera ficheros de trozos)
+```
 
+x bytes
+x filas
+```
 
+* #### tr
+(Pasa de mayusculas a minusculas)
+```
 
+ABC...abc... < fichero.txt
+```
 
+* #### uniq
+(elimina lineas duplicadas)
+                          
+* #### nl
+(como el comando cat pero imprime los num de lineas)
+```
 
+-b a (numera tambien las lineas vacias)
+```
 
+* #### head/tail
+(ver las primeras o ultimas filas N lineas)
+```
+
+tail -zoo f fichero.log (mantiene el fichero abierto u nos muestra las 1er lineas nuevas que se van cambiando del fichero)
+```
+                          
+* #### more/less
+(Informacion paginada)
+
+* #### cut
+(Corta en vertical)
+```
+
+-b (por bytes)
+-f (por campos)
+-c (por caracteres)
+```
+
+* #### wc
+(word count)
+```
+
+-l (cuenta lineas)
+-w (cuenta palabras)
+-m (cuenta caracteres)
+-c (por caracter)
+```
+
+* #### grep
+(busquedas)                     
+* #### egrep
+(soporta expr regulares)                        
+* #### fgrep
+(NO soporta expr regulares)
+```
+
+Expresiones regulares
++ (1 o mas)
+* (0 o mas)
+? (0 o 1)
+. (cualquier caracter, pero solo 1)
+\ (escapar simbolos con significado especial)
+1 (inicio linea)
+$ (fin linea)
+[a-z] (rango)
+[abcd] (1 solo caracter)
+| (opcionalidad)
+[1, ...] (no coincidencia)
+() (agrupacion)
+{N} (num de ocurrencias)
+{M} (1 o mas ocurrencias)
+```                         
 
 
 
