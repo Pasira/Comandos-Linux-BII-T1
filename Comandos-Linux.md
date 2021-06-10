@@ -108,11 +108,53 @@ dd if=/dar/zero of=empty.img bs=1024 count=720
 dd if=dev/cdrom of=/media/imagenCD.iso
 dd if=/dev/hda of=/media/mbr bs=512 count=1
 ```
+  
+* #### mkdir
+(Crea subdirectorios)
+```
+-p (crea todos los subdirectorios necesarios)
+```
 
+* #### rmdir
+(Eliminar un directorio)
+```
+-p (el arbol entero)
+```
 
+* #### chown
+(Permite cambiar el propietario de un archivo)
+```
+-R (recursivo)
+  .chown user:group file (solo puede root!!)
+```
 
+* #### chgrp
+(Cambia el grupo owner)
+  
+* #### chmod
+()
 
+* #### find
+(Buscar ficheros en el sistema)
+ ```
+-type d
+-name cadena
+-perm 777
+-exec
+-user uid
+-atime +-/n
+-size +50mb
+```
 
+* #### ln
+(enlaces)
+```
+  
+-d (a directorios)
+-s (simbolico)(por defecto si no es HARD*)
+
+*HARD-link (todos los enlaces son los mismos inodo. Comparten TODO) Son "copias" del fichero" (si se borra el original, no pasa nada)
+```
 
 
 
