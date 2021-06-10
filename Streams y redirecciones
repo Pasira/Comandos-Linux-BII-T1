@@ -1,0 +1,37 @@
+# Streams y redirecciones
+
+
+
+*  #### stdout/stdin/stderr
+(Flujos de entrada y salida)
+```
+>
+>>
+2> (salida de error) 1> (salida estandar)
+2>>
+&> (salida error error y salida estandar)
+<
+<<
+```
+
+*  #### tee
+(Redirigir fichero/s y salida estandar a la vez)
+```
+$prog | tee output.txt
+```
+
+*  #### find ./-name "*~" | xargs -d "\n" m 
+
+*  #### paste /join
+(cat concatena en vertical y paste en horizontal)
+```
+
+```
+
+*  #### sort -k 3 listing.txt
+()
+```
+-n (por valor numerico)
+-r (invierte el orden)
+-f (da igual minusculas que mayusculas)
+```
