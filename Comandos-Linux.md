@@ -132,7 +132,7 @@ dd if=/dev/hda of=/media/mbr bs=512 count=1
 (Cambia el grupo owner)
   
 *  #### chmod
-()
+(Cambiar los permisos de acceso de un fichero o directorio)
 
 *  #### find
 (Buscar ficheros en el sistema)
@@ -144,10 +144,13 @@ dd if=/dev/hda of=/media/mbr bs=512 count=1
 -user uid
 -atime +-/n
 -size +50mb
+  
+  
+Comandos opciones {} \ ;
 ```
 
 *  #### ln
-(enlaces)
+(Enlaces)
 ```
   
 -d (a directorios)
@@ -172,17 +175,17 @@ ABC...abc... < fichero.txt
 ```
 
 *  #### uniq
-(elimina lineas duplicadas)
+(Elimina lineas duplicadas)
                           
 *  #### nl
-(como el comando cat pero imprime los num de lineas)
+(Como el comando cat pero imprime los num de lineas)
 ```
 
 -b a (numera tambien las lineas vacias)
 ```
 
 *  #### head/tail
-(ver las primeras o ultimas filas N lineas)
+(Ver las primeras o ultimas filas N lineas)
 ```
 
 tail -zoo f fichero.log (mantiene el fichero abierto u nos muestra las 1er lineas nuevas que se van cambiando del fichero)
@@ -202,7 +205,7 @@ tail -zoo f fichero.log (mantiene el fichero abierto u nos muestra las 1er linea
 ```
 
 *  #### wc
-(word count)
+(Word Count)
 ```
 
 -l (cuenta lineas)
@@ -212,9 +215,9 @@ tail -zoo f fichero.log (mantiene el fichero abierto u nos muestra las 1er linea
 ```
 
 *  #### grep
-(busquedas)                     
+(Busquedas)                     
 *  #### egrep
-(soporta expr regulares)                        
+(Soporta expr regulares)                        
 *  #### fgrep
 (NO soporta expr regulares)
 ```
